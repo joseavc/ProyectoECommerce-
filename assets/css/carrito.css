@@ -1,0 +1,122 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Lato', sans-serif; */
+    background-color: #FFFFFF;
+    color: #212121
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contenedor {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #03a9f4;
+}
+
+
+
+
+
+/* Media Querys */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (max-width: 1280px) {
+    .contenedor{
+        max-width: 1024px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (max-width: 1024px) {
+    .contenedor{
+        max-width: 768px;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (max-width: 768px) {
+    li img{
+        width: 42rem;
+    }
+
+    .cart-item{
+        border: 1px solid #BDBDBD;
+    }
+}
+
+@media (max-width: 640px) {
+    
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (max-width: 480px) {
+    li img{
+        width: 30rem;
+    }
+    
+}
