@@ -49,8 +49,13 @@ nav{
     background-color: #03a9f4;
 }
 
+#prom{
+    background-color: #eee;
+}
 
-
+.btn-pagar:hover{
+    background-color: #03a9f4;
+}
 
 
 /* Media Querys */
@@ -99,6 +104,10 @@ nav{
         width: 42rem;
     }
 
+    .resumen{
+        width: 42rem;
+    }
+
     .cart-item{
         border: 1px solid #BDBDBD;
     }
@@ -119,4 +128,14 @@ nav{
         width: 30rem;
     }
     
+    .resumen{
+        width: 30rem;
+    }
+}
+
+
+
+
+.bor{
+    border: 1px solid black;
 }
