@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Farmacia Dermatologica</title>
+    <link rel="icon" type="image/png" href="assets/imagenes index/imgsup.png">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <nav class=" flex flex-col md:flex-row  items-center  justify-around text-3xl h-auto py-2 md:py-5">
@@ -14,6 +16,150 @@
         <a href="catalogo.html">CATALOGO</a>
         <a href="carrito.html">CARRITO</a>
     </nav>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img3.jpg" alt="">
+        </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img5.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img6.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img7.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img8.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img9.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img10.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes index/img11.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="contenedor flex flex-col justify-around items-center pt-9">
+            <!-- Redes -->
+            <div class="w-full">
+                <ul class="w-full flex justify-center flex-wrap">
+                    <li>
+                        <a href="">
+                            <div class="icons8-facebook-rodeado-de-círculo"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-twitter"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-whatsapp"></div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-instagram"></div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-youtube-play"></div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Borde -->
+            <div class="border-b w-96"></div>
+
+            <!-- Informacion -->
+            <div class="w-full flex flex-col md:flex-row items-center md:items-start md:justify-around pt-7">
+                <div class="w-96">
+                    <h2>Nosotros</h2>
+                    <p class="font-thin text-2xl">En Farmacia Dermatologica, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptatum atque ducimus similique accusamus beatae, necessitatibus ab, ex debitis delectus illo fuga tenetur eum magni non a dolore temporibus
+                        facilis.
+                    </p>
+
+                </div>
+
+                <div class="w-96 m-8 md:m-0">
+                    <h2>Nuestra Empresa</h2>
+                    <div class="flex flex-col">
+                        <a class="font-thin text-2xl" href="">Términos y Condiciones</a>
+                        <a class="font-thin text-2xl" href="">Politicas de Devoluciones</a>
+                        <a class="font-thin text-2xl" href="">Envios</a>
+                        <a class="font-thin text-2xl" href="">Reportes</a>
+                    </div>
+
+
+                </div>
+
+                <div class="w-96 m-8 md:m-0">
+                    <h2>Informacion de Contacto</h2>
+                    <p class="font-thin text-2xl">México</p>
+                    <p class="font-thin text-2xl">Telefono: 833-123-4567</p>
+                    <p class="font-thin text-2xl">Correo: dematologica@gmail.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Derechos -->
+            <div class="w-full text-center pt-7">
+                <p class="font-thin">© 2021 Sitio desarrollado por Jose, Agustin y Jacob</p>
+            </div>
+        </div>
+
+
+    </footer>
+  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    
 
 
 </body>

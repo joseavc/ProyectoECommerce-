@@ -1,9 +1,36 @@
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: antiquewhite;
+    position: relative;
+    height: 100%;
 }
 
 nav{
     background-color: #0288d1;
     color: antiquewhite;
-
 }
+    
+
+
+.swiper {
+    max-width: auto;
+    height: auto;
+  }
+
+  .swiper-slide {
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
