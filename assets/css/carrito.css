@@ -1,26 +1,8 @@
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
     color: #212121
 }
-
-
 
 .contenedor {
     max-width: 1280px;
@@ -129,10 +111,10 @@ footer {
 
 @media (max-width: 768px) {
     .img-carrito {
-        width: 42rem;
+        width: 26.25;
     }
     .resumen {
-        width: 42rem;
+        width: 26.25;
     }
     .cart-item {
         border: 1px solid #BDBDBD;
@@ -149,10 +131,10 @@ footer {
 
 @media (max-width: 480px) {
     .img-carrito {
-        width: 30rem;
+        width: 1.875;
     }
     .resumen {
-        width: 30rem;
+        width: 1.875;
     }
 }
 
