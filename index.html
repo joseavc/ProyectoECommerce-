@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmacia Dermatologica</title>
+    <link rel="icon" type="image/png" href="assets/imagenes index/imgsup.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+          background-color: white;
+          color: black;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
+    
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class=" flex flex-col md:flex-row items-center justify-around text-lg md:text-3xl h-auto py-2 md:py-5 bg-blue-400 text-gray-50">
+        <a href="index.html" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">HOME</a>
+        <a href="catalogo.html" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">CATALOGO</a>
+        <a href="carrito.html" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">CARRITO</a>
+    </nav>
+    <!--Swiper-->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img9.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img10.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/imagenes index/img11.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="w-full flex flex-row items-center justify-center py-5">
+        <h1 class="text-center text-lg md:text-2xl  py-2 md:py-5 w-5/6">
+            SERVICIOS DERMATOLOGICOS Y PRODUCTOS PARA EL CUIDADO DE TU PIEL
+        </h1>
+        <button class="bg-gray-400 rounded-full px-5 h-1/2" onclick="darkmode()" class="w-1/6"> DARK MODE</button>
+    </div>
+    <!--Grid-->
+    <div class="grid grid-rows-3 text-gray-600 grid-flow-col gap-4">
+        <div class="row-span-3 bg-gray-200  flex flex-col items-center justify-around   ">
+            <h2 class=" py-5 text-lg md:text-xl">
+                TRATAMIENTOS LASER
+            </h2>
+            <div class="flex flex-col py-5  justify-around  h-1/2">
+                <ul class="list-disc">
+                    <li>DEPILACION LASER.</li>
+                    <li>ELIMINAR MANCHAS EN LA PIEL.</li>
+                    <li>BLANCAMIENTO FACIAL.</li>
+                </ul>
+                <img src="assets/imagenes index/grid1.jpg" alt="imagen1" width="300" height="250">
+            </div>
+            <iframe width="300" height="250" src="https://www.youtube.com/embed/FWWk-_HhjKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>    
+        </div>
+        <div class="col-span-2 col-span-2 bg-gray-200  flex items-center justify-center  flex-col md:flex-col  py-2">
+            <h2 class="py-5 text-lg md:text-xl">
+                CREMAS
+            </h2>
+            <div class="flex flex-col  items-center w-full ">
+                <div class="flex flex-col md:flex-row items-center justify-between py-5 w-3/5 ">
+                    <ul class="list-disc">
+                        <li>CREMAS DEPILADORAS.</li>
+                        <li>CREMAS PARA EL ACNE.</li>
+                        <li>PARA MANCHAS SOLARES.</li>
+                        <li>BLOQUEADOR SOLAR.</li>
+                    </ul>
+                    <img src="assets/imagenes index/grid2.jpg" alt="imagen1" width="300" height="250">
+                </div>
+                <button class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>
+            </div>
+        </div>
+        <div class="row-span-2 col-span-2 bg-gray-200 flex items-center justify-evenly  flex-col md:flex-col py-5 ">
+            <h2 class="py-5 text-lg md:text-xl">
+                DIAGNOSTICOS MEDICOS
+            </h2>
+            <div class="flex flex-col items-center w-full">
+                <div class="flex flex-col md:flex-row  items-center justify-between py-5 w-3/5">
+                    <lu class="list-disc">
+                        <li>CANCER EN LA PIEL.</li>
+                        <li>ECCEMA.</li>
+                        <li>ENVEJECIMIENTO DE LA PIEL.</li>
+                        <li>IMPETIGO.</li>
+                        <li>INFECCION EN LA PIEL.</li>
+                        <li>PICAZON.</li>
+                        <li>PISIORASIS.</li>
+                        <li>SARPULLIDO.</li>
+                    </lu>
+                    <img src="assets/imagenes index/grid3.jpg" alt="imagen1" width="300" height="250">
+                </div>
+                <button class=" rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>  
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="my-0 mx-auto max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl flex flex-col justify-around items-center pt-9">
+            <!-- Redes -->
+            <div class="w-full">
+                <ul class="w-full flex justify-center flex-wrap">
+                    <li>
+                        <a href="">
+                            <div class="icons8-facebook-rodeado-de-círculo"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-twitter"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-whatsapp"></div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-instagram"></div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="icons8-youtube-play"></div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Borde -->
+            <div class="border-b w-96"></div>
+
+            <!-- Informacion -->
+            <div class="w-full flex flex-col md:flex-row items-center md:items-start md:justify-around pt-7">
+                <div class="w-96">
+                    <h2 class="font-normal text-lg">Nosotros</h2>
+                    <p class="font-thin text-base">En Farmacia Dermatologica, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo voluptatum atque ducimus similique accusamus beatae, necessitatibus ab, ex debitis delectus illo fuga tenetur eum magni non a dolore temporibus
+                        facilis.
+                    </p>
+
+                </div>
+
+                <div class="w-96 m-8 md:m-0">
+                    <h2 class="font-normal text-lg">Nuestra Empresa</h2>
+                    <div class="flex flex-col">
+                        <a class="font-thin text-base" href="">Términos y Condiciones</a>
+                        <a class="font-thin text-base" href="">Politicas de Devoluciones</a>
+                        <a class="font-thin text-base" href="">Envios</a>
+                        <a class="font-thin text-base" href="">Reportes</a>
+                    </div>
+
+
+                </div>
+
+                <div class="w-96 m-8 md:m-0">
+                    <h2 class="font-normal text-lg">Informacion de Contacto</h2>
+                    <p class="font-thin text-base">México</p>
+                    <p class="font-thin text-base">Telefono: 833-123-4567</p>
+                    <p class="font-thin text-base">Correo: dematologica@gmail.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Derechos -->
+            <div class="w-full text-center pt-7">
+                <p class="font-thin text-base">© 2021 Sitio desarrollado por Jose, Agustin y Jacob</p>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        function darkmode() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+
+    </script>
+</body>
+
+</html>
