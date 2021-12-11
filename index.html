@@ -9,19 +9,7 @@
     <link rel="icon" type="image/png" href="assets/imagenes index/imgsup.png">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <style>
-        body {
-          background-color: white;
-          color: black;
-        }
-        
-        .dark-mode {
-          background-color: black;
-          color: white;
-        }
-        </style>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
 </head>
 
 <body>
@@ -73,14 +61,14 @@
         <div class="swiper-pagination"></div>
     </div>
     <div class="w-full flex flex-row items-center justify-center py-5">
-        <h1 class="text-center text-lg md:text-2xl  py-2 md:py-5 w-5/6">
+        <h1 id ="title" class="text-center text-lg md:text-2xl  py-2 md:py-5 w-5/6">
             SERVICIOS DERMATOLOGICOS Y PRODUCTOS PARA EL CUIDADO DE TU PIEL
         </h1>
         <button class="bg-gray-400 rounded-full px-5 h-1/2" onclick="darkmode()" class="w-1/6"> DARK MODE</button>
     </div>
     <!--Grid-->
     <div class="grid grid-rows-3 text-gray-600 grid-flow-col gap-4">
-        <div class="row-span-3 bg-gray-200  flex flex-col items-center justify-around   ">
+        <div class="row-span-3 bg-gray-200  flex flex-col items-center justify-around">
             <h2 class=" py-5 text-lg md:text-xl">
                 TRATAMIENTOS LASER
             </h2>
@@ -90,12 +78,12 @@
                     <li>ELIMINAR MANCHAS EN LA PIEL.</li>
                     <li>BLANCAMIENTO FACIAL.</li>
                 </ul>
-                <img src="assets/imagenes index/grid1.jpg" alt="imagen1" width="300" height="250">
+                <img src="assets/imagenes index/grid1.jpg" class="rounded-md"  alt="imagen1" width="300" height="250">
             </div>
-            <iframe width="300" height="250" src="https://www.youtube.com/embed/FWWk-_HhjKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <button class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>    
+            <iframe width="400" height="350" src="https://www.youtube.com/embed/FWWk-_HhjKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button id="button1" class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>    
         </div>
-        <div class="col-span-2 col-span-2 bg-gray-200  flex items-center justify-center  flex-col md:flex-col  py-2">
+        <div class="col-span-2 col-span-2 bg-gray-200  flex items-center justify-center  flex-col md:flex-col  py-5">
             <h2 class="py-5 text-lg md:text-xl">
                 CREMAS
             </h2>
@@ -107,10 +95,10 @@
                         <li>PARA MANCHAS SOLARES.</li>
                         <li>BLOQUEADOR SOLAR.</li>
                     </ul>
-                    <img src="assets/imagenes index/grid2.jpg" alt="imagen1" width="300" height="250">
+                    <img src="assets/imagenes index/grid2.jpg" class="rounded-md" alt="imagen1" width="300" height="250">
                 </div>
-                <button class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>
-            </div>
+						 </div>
+						 <button id="button1" class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>
         </div>
         <div class="row-span-2 col-span-2 bg-gray-200 flex items-center justify-evenly  flex-col md:flex-col py-5 ">
             <h2 class="py-5 text-lg md:text-xl">
@@ -128,10 +116,10 @@
                         <li>PISIORASIS.</li>
                         <li>SARPULLIDO.</li>
                     </lu>
-                    <img src="assets/imagenes index/grid3.jpg" alt="imagen1" width="300" height="250">
+                    <img src="assets/imagenes index/grid3.jpg" class="rounded-md" alt="imagen1" width="300" height="250">
                 </div>
-                <button class=" rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>  
-            </div>
+						 </div>
+						 <button id="button1" class="rounded-full py-2 px-5 bg-gray-400"> CLICK AQUI </button>  
         </div>
     </div>
     <!--footer-->
@@ -216,26 +204,7 @@
     </footer>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        function darkmode() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-        }
-
-    </script>
+    <!-- Script main.js -->
+    <script src="main.js"></script>
 </body>
-
 </html>
